@@ -1,0 +1,8 @@
+user_input = input("Enter a string: ")
+
+# Using list comprehension
+lower_letters = [c for c in user_input if c.islower()]
+upper_letters = [c for c in user_input if c.isupper()]
+no_spaces = "".join(lower_letters + upper_letters)
+
+print(no_spaces)
